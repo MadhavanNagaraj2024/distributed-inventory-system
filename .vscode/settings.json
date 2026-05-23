@@ -1,0 +1,98 @@
+{
+    "folder-color.pathColors": [
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\node_modules",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\src",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\test",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\.gitignore",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\.prettierrc",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\eslint.config.mjs",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\nest-cli.json",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\package-lock.json",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\package.json",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\README.md",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\tsconfig.build.json",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\tsconfig.json",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\src\\app.controller.spec.ts",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\src\\app.controller.ts",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\src\\app.module.ts",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\src\\app.service.ts",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\src\\main.ts",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\test\\app.e2e-spec.ts",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\apps\\api-gateway\\test\\jest-e2e.json",
+            "color": "foldercolorizer.color_d7d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\package.json",
+            "color": "foldercolorizer.color_00d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\pnpm-lock.yaml",
+            "color": "foldercolorizer.color_00d7ff"
+        },
+        {
+            "filePath": "distributed-inventory-system\\pnpm-workspace.yaml",
+            "color": "foldercolorizer.color_00d7ff"
+        }
+    ],
+    "prisma.pinToPrisma6": true,
+    "liveServer.settings.multiRootWorkspaceName": "distributed-inventory-system"
+}
