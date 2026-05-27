@@ -12,7 +12,6 @@ import { ProductModule } from './modules/product/product.module';
     }),
 
     PrismaModule,
-
     ProductModule,
   ],
 

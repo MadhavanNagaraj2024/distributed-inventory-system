@@ -100,4 +100,18 @@ export class ProductRepository {
         : {},
     });
   }
+
+  async update(id: string, data: Prisma.ProductUpdateInput) {
+    return this.prisma.product.update({
+      where: { id },
+      data,
+    });
+  }
+
+  async changeStatus(id: string, data: Prisma.ProductUpdateInput) {
+    return this.prisma.product.update({
+      where: { id },
+      data,
+    });
+  }
 }

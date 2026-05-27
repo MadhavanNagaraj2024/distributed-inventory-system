@@ -8,6 +8,7 @@ import { ProductRepository } from './product.repository';
 
 import { CreateProductDto } from './dto/create-product.dto';
 import { QueryProductDto } from './dto/query-product.dto';
+import { UpdateProductDto } from './dto/update-product.dto';
 
 @Injectable()
 export class ProductService {
@@ -99,6 +100,61 @@ export class ProductService {
       message: 'Product fetched successfully',
 
       data: product,
+    };
+  }
+
+  async updateProduct(id: string, dto: UpdateProductDto) {
+    /* CHECK PRODUCT EXISTS */
+
+    const existingProduct = await this.productRepository.findById(id);
+
+    if (!existingProduct) {
+      throw new NotFoundException('Product not found');
+    }
+
+    /* CHECK DUPLICATE SKU */
+
+    if (dto.sku) {
+      const existingSku = await this.productRepository.findBySku(dto.sku);
+
+      if (existingSku && existingSku.id !== id) {
+        throw new BadRequestException('SKU already exists');
+      }
+    }
+
+    /* GENERATE SLUG */
+
+    const slug = dto.name
+      ? dto.name.toLowerCase().replace(/\s+/g, '-')
+      : existingProduct.slug;
+
+    /* UPDATE PRODUCT */
+
+    const updatedProduct = await this.productRepository.update(id, {
+      ...dto,
+      slug,
+    });
+
+    return {
+      message: 'Product updated successfully',
+      data: updatedProduct,
+    };
+  }
+
+  async deactivateProduct(id: string) {
+    const product = await this.productRepository.findById(id);
+
+    if (!product) {
+      throw new NotFoundException('Product not found');
+    }
+
+    const updatedProduct = await this.productRepository.changeStatus(id, {
+      status: 'ACTIVE',
+    });
+
+    return {
+      message: 'Product deactivated successfully',
+      data: updatedProduct,
     };
   }
 }
