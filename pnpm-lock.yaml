@@ -261,9 +261,6 @@ importers:
       cookie-parser:
         specifier: ^1.4.7
         version: 1.4.7
-      prisma:
-        specifier: 6.7.0
-        version: 6.7.0(typescript@5.9.3)
       redis:
         specifier: ^5.12.1
         version: 5.12.1
@@ -322,6 +319,9 @@ importers:
       prettier:
         specifier: ^3.4.2
         version: 3.8.3
+      prisma:
+        specifier: 6.7.0
+        version: 6.7.0(typescript@5.9.3)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
